@@ -1686,10 +1686,24 @@
 		width: auto;
 		margin: 0;
 	}
-	@media only screen and (max-width: 600px) {
+
+	/*mobile view*/
+	@media only screen and (max-width: 992px) {
 	.image-center img {
 		width: 300px;
 		margin: 0 auto;
+
+	}
+
+	
+    #digital-marketing1,#web-development1,#website-design1,#mobile-apps1,#e-commerce1,#erp1{
+		
+        display:block !important;
+	}
+	
+    #digital-marketing,#web-development,#website-design,#mobile-apps,#e-commerce,#erp{
+   	    visibility: hidden;
+		 display:none !important;
 	}
 
 	.btn-normal {
@@ -1698,10 +1712,21 @@
 		line-height: 1 !important;
 	}
 }
-@media only screen and (min-width: 700px) {
+
+
+/*desktop only*/
+@media only screen and (min-width: 992px) {
 .image-center img {
 		width: auto;
 		margin: 0 auto;
+	}
+
+    #digital-marketing1,#web-development1,#website-design1,#mobile-apps1,#e-commerce1,#erp1{
+		 display:none !important;
+	}
+
+	 #digital-marketing,#web-development,#website-design,#mobile-apps,#e-commerce,#erp{
+		display:block !important;
 	}
 
 	.btn-normal {
@@ -1710,6 +1735,9 @@
 		line-height: 1 !important;
 	}
 }
+
+
+
 	.images-container .holder1 {
 	    left: 52%;
 	    position: absolute;
